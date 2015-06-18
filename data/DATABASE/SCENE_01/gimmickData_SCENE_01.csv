@@ -1,0 +1,2 @@
+pos.x,pos.y,pos.z,fTimeStart,fTimeEnd,fRadiusDis,fWidth,fHeight,fGoalX,fGoalY,bUse,nType,aRemarks
+605.000000,345.000000,0.000000,0.000000,5.000000,50.000000,200.000000,300.000000,-1.000000,550.000000,1,2,GIMMICK_TYPE_003
