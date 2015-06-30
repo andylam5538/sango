@@ -1,2 +1,2 @@
-pos.x,pos.y,pos.z,fSpeedX,bUse,nType
-45.000000,245.000000,0.000000,5.000000,1,0
+pos.x,pos.y,pos.z,move.x,bUse,nType
+35.000000,240.000000,0.000000,4.500000,1,0

@@ -35,4 +35,5 @@ typedef struct
 HRESULT InitTimeCounter(void);
 void UpdateTimeCounter(void);
 TIMECOUNTER *GetTimeCounter(void);
+bool *GetIsTimeReCount(void);
 #endif

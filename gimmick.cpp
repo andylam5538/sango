@@ -255,8 +255,10 @@ void UpdateGimmick(void)
 	// 編集モードは更新しない
 	if(*GetGameMode() != SELECTMODE_GIMMICKEDIT)
 	{
-		if(*GetIsStop() == true)
+		if(*GetIsStop() == true || *GetIsTimeReCount() == true)
 		{
+			// 自动循环设置
+			*GetIsTimeReCount() = false;
 			for(int nCntGim = 0; nCntGim < MAX_GIMMICK; nCntGim++)
 			{
 				if(g_aGimmick[nCntGim].bUse == true)
@@ -270,7 +272,6 @@ void UpdateGimmick(void)
 					g_aGimmick[nCntGim].bCurrentPri06 = false;
 
 					int nTemp = 0;
-
 					if(!g_aGimmick[nCntGim].bIsLock)
 					{
 						nTemp = (int)(g_aPlaybarGim[g_aGimmick[nCntGim].nPriorityNum01].fTimeStart * UPDATA_FRAME);
